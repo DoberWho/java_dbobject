@@ -9,7 +9,7 @@
 	</conexion>
 
 	<queries>
-		<query>CREATE TABLE `person` (`id` INT NOT NULL,`name` VARCHAR(50) NOT NULL DEFAULT '',`lastname` VARCHAR(50) NOT NULL DEFAULT '',	PRIMARY KEY (`id`))COLLATE='latin1_spanish_ci';</query>
-		<query>CREATE TABLE IF NOT EXISTS 'producto' (	'id'	INTEGER,	'name'	TEXT,	'desc'	TEXT,	'precio' INTEGER DEFAULT 0,	'stock'	INTEGER DEFAULT 1,	PRIMARY KEY('id' AUTOINCREMENT))</query>
+		<query>CREATE TABLE IF NOT EXISTS `person` (`id` INT NOT NULL AUTO_INCREMENT,`name` VARCHAR(50) NOT NULL DEFAULT '',`lastname` VARCHAR(50) NOT NULL DEFAULT '',	PRIMARY KEY (`id`))COLLATE='latin1_spanish_ci';</query>
+		<query>CREATE TABLE IF NOT EXISTS `producto` (`id` INT NOT NULL AUTO_INCREMENT,`desc` VARCHAR(250) NOT NULL DEFAULT '',`precio` SMALLINT UNSIGNED NOT NULL DEFAULT 0,`stock` SMALLINT UNSIGNED NOT NULL DEFAULT 1,`name` VARCHAR(50) NOT NULL DEFAULT '',PRIMARY KEY (`id`))COLLATE='latin1_spanish_ci';</query>
 	</queries>
 </configuration>
