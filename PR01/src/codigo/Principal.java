@@ -52,38 +52,19 @@ public class Principal {
 			per.setId(1);
 			per.delete();
 			
+			// -> 6.- Listar
+			System.out.println("Persona :: Listar"); 
+			for (DbObject obj : per.list()) {
+				Persona p1 = (Persona) obj;
+				System.out.println("=>"+p1.toString() );
+			}
+			
 		}catch(Exception e) {
 			 e.printStackTrace();
 		}
 		
 		
-		try {
-			
-			
-			
-			
-			ArrayList<Persona> lista2 = lista;
-			for (Persona persona : lista2) {
-				System.out.println("1-Persona:"+persona.name);
-			}
-			
-			per.name     = "Don";
-			per.lastname = "Jose"; 
-			per.update();
-			
-			lista = per.list();
-			lista2 = lista;
-			for (Persona persona : lista2) {
-				System.out.println("Persona:"+persona.name);
-			}
-			
-			//per.delete();
-			
-			
-			
-		}catch(SQLException e) {
-			System.out.println( e.getMessage() );
-		}  
+	 
 
 		// create a database connection
 
