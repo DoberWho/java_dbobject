@@ -13,15 +13,52 @@ public class Principal {
 				
 		Config.getInstance();
 		
+		// =============================
+		// Persona
+		// =============================
+		
+		Persona per = new Persona();
+		try{
+			// ->  1.- Listar
+			System.out.println("Persona :: Listar"); 
+			for (DbObject obj : per.list()) {
+				Persona p1 = (Persona) obj;
+				System.out.println("=>"+p1.toString() );
+			}
+			
+			// -> 2.- Insertar
+			per.name     = "Nombre Persona 01";
+			per.lastname = "Apellido Persona 01"; 	 
+			per.insertar();
+			
+			per.name     = "Nombre Persona 02";
+			per.lastname = "Apellido Persona 02"; 
+			per.insertar();
+			
+			// -> 3.- Update
+			per.name     = "Nombre Persona 03";
+			per.lastname = "Apellido Persona 03"; 
+			per.setId(3);
+			per.update();
+			
+			// -> 4.- Listar
+			System.out.println("Persona :: Listar"); 
+			for (DbObject obj : per.list()) {
+				Persona p1 = (Persona) obj;
+				System.out.println("=>"+p1.toString() );
+			}
+			
+			
+		}catch(Exception e) {
+			 e.printStackTrace();
+		}
+		
+		
 		try {
 			
-			Persona per = new Persona();
-			per.name     = "Don Jose";
-			per.lastname = "Pepito";
-			per.setId(1);
 			
-			per.insertar();
-			ArrayList lista = per.list();
+			
+			
 			ArrayList<Persona> lista2 = lista;
 			for (Persona persona : lista2) {
 				System.out.println("1-Persona:"+persona.name);
