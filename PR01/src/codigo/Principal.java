@@ -28,8 +28,7 @@ public class Principal {
 			}
 			
 			per.name     = "Don";
-			per.lastname = "Jose";
-			
+			per.lastname = "Jose"; 
 			per.update();
 			
 			lista = per.list();
@@ -38,7 +37,9 @@ public class Principal {
 				System.out.println("Persona:"+persona.name);
 			}
 			
-			per.delete();
+			//per.delete();
+			
+			
 			
 		}catch(SQLException e) {
 			System.out.println( e.getMessage() );

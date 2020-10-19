@@ -89,8 +89,13 @@ public class Producto extends DbObject{
 
 	@Override
 	public DbObject parse(ResultSet rs) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
+		Producto obj = new Producto();
+		obj.id     = rs.getInt("id");
+		obj.name   = rs.getString("name");
+		obj.desc   = rs.getString("desc");
+		obj.precio = rs.getInt("precio");
+		obj.stock  = rs.getInt("stock");
+		return obj;
 	}
 
 }
