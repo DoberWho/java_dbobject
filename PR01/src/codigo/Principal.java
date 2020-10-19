@@ -48,6 +48,9 @@ public class Principal {
 				System.out.println("=>"+p1.toString() );
 			}
 			
+			// -> 5.- Delete
+			per.setId(1);
+			per.delete();
 			
 		}catch(Exception e) {
 			 e.printStackTrace();
