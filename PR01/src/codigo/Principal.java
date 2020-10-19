@@ -56,7 +56,7 @@ public class Principal {
 			System.out.println("Persona :: Listar"); 
 			for (DbObject obj : per.list()) {
 				Persona p1 = (Persona) obj;
-				System.out.println("=>"+p1.toString() );
+				System.out.println("=>"+p1 );
 			}
 			
 		}catch(Exception e) {

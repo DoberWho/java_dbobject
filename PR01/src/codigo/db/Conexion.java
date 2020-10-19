@@ -93,7 +93,7 @@ public class Conexion {
 			
 			String resValue = ""+value;
 			if (value instanceof String) {
-				resValue = "'" + value + "'";
+				resValue = "`" + value + "`";
 			} 			
 			res = res + ","+resValue;
 		}
@@ -113,7 +113,7 @@ public class Conexion {
 				resValue = "'" + value + "'";
 			} 
 
-			res = res + separador + "'" + col + "'="+resValue;
+			res = res + separador + "`" + col + "`="+resValue;
 
 		}
 
