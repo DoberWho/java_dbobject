@@ -5,7 +5,7 @@
 		<driver>com.mysql.jdbc.Driver</driver>
 		<host>jdbc:mysql://127.0.0.1:3306/clase?useSSL=false</host>
 		<user>root</user>
-		<pass>A.joker.1</pass>
+		<pass>y^wgdscy</pass>
 	</conexion>
 
 	<queries>
