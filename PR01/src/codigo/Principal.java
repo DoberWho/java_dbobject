@@ -49,9 +49,9 @@ public class Principal {
 		MenuProducto.iniciar();
 		
 		// =============================
-				// Producto
-				// =============================
-				MenuProducto.iniciar();
+		// Usuario
+		// =============================
+		MenuUsuario.iniciar();
 		
 	 
 
