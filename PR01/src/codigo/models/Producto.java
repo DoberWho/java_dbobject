@@ -12,10 +12,10 @@ public class Producto extends DbObject{
 	private static final ArrayList COLS = getArrayCols();
 
 	private int id = 0;
-	private String name = "";
-	private String desc = "";
-	private int precio = 0; 
-	private int stock = 1;
+	public String name = "";
+	public String desc = "";
+	public int precio = 0; 
+	public int stock = 1;
 	
 	private static ArrayList getArrayCols() {
 		ArrayList list = new ArrayList();
